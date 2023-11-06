@@ -1,0 +1,128 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>관리자 책 정보 수정</title>
+
+        <style>
+            table{
+                border : 1px solid;
+                border-collapse: collapse;
+            }
+
+            th{
+                border : 1px solid;
+                width : 100px;                
+            }
+
+            td{
+                border : 1px solid;
+                width: 600px;
+            }
+
+            #longInfo{
+                height: 100px;
+            }
+
+            textarea{
+                width: 590px;
+                border: 0;
+                resize: none;
+            }
+
+            #longTextarea{
+                height: 100px;
+            }
+
+            #btn_cancel{
+                background-color: red;
+                height: 50px;
+                width: 100px;
+            }
+
+            #btn_add{
+                background-color: green;
+                height: 50px;
+                width: 100px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <center>
+                <h3> &lt; 도서 추가 &gt;</h3>
+            </center>
+        </header>
+        
+        <center>
+            <table>
+                <tr>
+                    <th>표지(경로)</th>
+                    <td><textarea name="cover"></textarea></td>
+                </tr>
+                <tr>
+                    <th>ISBN</th>
+                    <td><textarea name="isbn"></textarea></td>
+                </tr>
+                <tr>
+                    <th>제목</th>
+                    <td><textarea name="bookTitle"></textarea></td>
+                </tr>
+                <tr>
+                    <th>저자</th>
+                    <td><textarea name="writer"></textarea></td>
+                </tr>
+                <tr>
+                    <th>출판사</th>
+                    <td><textarea name="publisher"></textarea></td>
+                </tr>
+                <tr>
+                    <th>출판 날짜</th>
+                    <td><textarea name="publicationDate"></textarea></td>
+                </tr>
+                <tr>
+                    <th>키워드</th>
+                    <td><textarea name="keyword"></textarea></td>
+                </tr>
+                <tr id="longInfo">
+                    <th>책 소개</th>
+                    <td><textarea id="longTextarea" name="bookInfo"></textarea></td>
+                </tr>
+                <tr id="longInfo">
+                    <th>목차</th>
+                    <td><textarea id="longTextarea" name="bookIndex"></textarea></td>
+                </tr>
+                <tr id="longInfo">
+                    <th>저자 소개</th>
+                    <td><textarea id="longTextarea" name="writerInfo"></textarea></td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+
+            <table>
+                <tr>
+                    <th>카테고리</th>
+                    <td><textarea name="category"></textarea></td>
+                </tr>
+                <tr>
+                    <th>수준</th>
+                    <td><textarea name="level"></textarea></td>
+                </tr>
+                <tr>
+                    <th>언어</th>
+                    <td><textarea name="language"></textarea></td>
+                </tr>
+            </table>
+
+            <p/>
+            
+            <button type="button" id="btn_cancel">취소</button>
+            <button type="button" id="btn_add">추가</button>
+        </center>
+        
+    </body>
+</html>
